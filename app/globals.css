@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --bg-1: #f7f7fb;
+  --bg-2: #e9f2ff;
+  --ink: #0f172a;
+  --card: #ffffff;
+  --accent: #0f766e;
+  --accent-weak: #e2f2ef;
+  --sun: rgba(255, 244, 217, 0.8);
+  --shadow: 0 20px 60px rgba(15, 23, 42, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: radial-gradient(1200px 600px at 10% -10%, var(--sun), transparent 60%),
+    radial-gradient(900px 500px at 100% 0%, rgba(226, 242, 239, 0.8), transparent 55%),
+    linear-gradient(160deg, var(--bg-1), var(--bg-2));
+  min-height: 100vh;
+  font-family: "Hiragino Maru Gothic ProN", "Yu Gothic", "Meiryo", ui-rounded, system-ui, sans-serif;
+}
+
+button:focus-visible {
+  outline: 3px solid rgba(14, 116, 144, 0.35);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: rgba(15, 118, 110, 0.2);
+}
